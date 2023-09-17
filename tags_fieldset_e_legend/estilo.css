@@ -1,0 +1,10 @@
+fieldset{
+    background-color: gainsboro;
+    margin-bottom: 20px;
+    border: 2px solid tan;
+}
+legend{
+    background-color: salmon;
+    color: white;
+    padding: 5px;
+}
