@@ -1,0 +1,27 @@
+/*NOME DO ELEMENTO*/
+a{
+    color:palegreen;
+}
+/*ID DO ELEMENTO*/
+#titulo{  
+    color: blue;
+}
+/*CLASS DO ELEMENTO*/
+.texto{
+    color:cadetblue
+}
+/*ELEMENTO, OUTRO ELEMENTO*/
+#listaBolo,
+.listaBolosIngredientes{
+    color: blueviolet;
+    font-size: 30px;
+}
+/*ELEMENTO OUTRO ELEMENTO*/
+/*Adicionando efeitos dentro de um elemento que está dentro de outro elemento*/
+ul li{
+    color: darkgoldenrod;
+}
+ol li{
+    color: firebrick;
+}
+
