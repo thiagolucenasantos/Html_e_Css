@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIELDSET E LEGEND</title>
+    <link rel="stylesheet" href="./estilo.css">
+</head>
+<body>
+   <form action="" method="post">
+    <input type="hidden" name="pais" id="" value="BR"> <!--Campo fica escondido por conta do hidden, mas a informaçao aparece na url-->
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="">
+            Primeiro Nome: <br>
+            <input type="text" name="name" id="" required> <!--required faz com que o campo seja obrigatório -->
+        </label> 
+        <br>
+
+        <label for="">
+            Sobrenome: <br>
+            <input type="text" name="lastname" minlength="3"><!--minleghth - tamanho minimo do campo-->
+        </label>
+        <br>
+
+        <label for="">
+            Idade: <br>
+            <input type="number" name="age" step="2" min="18" max="120"><!--step - faz com que o campo passe de 2 em 2-->
+        </label>
+        <br>
+
+        <label for="">
+            Foto: <br>
+            <input type="file" name="" accept="image/*"><!--seleçao de arquivos somente imagem com a tag accept-->
+        </label>
+        <br>
+    </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+            <label for="">
+                Nome da empresa:<br>
+                <input type="text" name="companyname" id="">
+            </label>
+            <br>
+
+            <label for="">
+                Cargo da empresa: <br>
+                <input type="text" name="companyjob" >
+            </label>
+            <br>
+        </fieldset>
+        <button>Cadastrar</button>
+
+
+   </form>
+
+</body>
+</html>
