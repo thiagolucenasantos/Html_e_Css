@@ -1,0 +1,7 @@
+.link{
+    color: cornflowerblue;
+    font-size: 20px;
+}
+.link:hover{
+    color: brown;
+}
