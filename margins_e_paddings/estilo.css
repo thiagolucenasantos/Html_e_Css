@@ -1,0 +1,9 @@
+body{ /*zerando a margin do body que vem padronizada já*/
+    margin: 0;
+}
+
+.exemplo{
+    border: 1px solid #fbff00;
+    padding: 10px; /*faz espaçamentos internos no elemento*/
+    margin: 20px;/*faz espaçamento externo no elemento*/
+}
