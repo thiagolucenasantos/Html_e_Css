@@ -1,0 +1,28 @@
+label{
+    display: block;
+    margin-bottom: 20px;
+}
+input[type='text'], textarea, select{
+    padding: 5px;
+    width: 300px;
+    font-size: 15px;
+    border: 1px solid goldenrod;
+    outline: 0; /*retirando a borda que vem padrão no navegador*/
+}
+
+textarea{
+    height: 200px;
+    resize: none; /*tag para bloquear o tamanho do quadrado da descrição*/
+}
+.termosLink{
+    color: #000;
+}
+button{
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid darkmagenta;
+    border-radius: 100px;
+}
+button:hover{
+    background-color: salmon;
+}
