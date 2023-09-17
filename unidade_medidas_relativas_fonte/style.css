@@ -1,0 +1,38 @@
+html{
+    font-size: 10px;
+}
+body{
+    margin: 0;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+.box{
+    font-size: 30px;
+}
+.boxInterno{
+    background-color: gainsboro;
+    width: 10em; /*unidade de medida em se baseia no font-size do pai, no caso aqui a class="box" */
+    height: 10em;
+}
+.boxPorcentagemPai{
+    background-color: tomato;
+    width: 50%;
+    height: 200px;
+}
+.boxPorcentagem{
+    background-color: yellow;
+    width: 50%;
+    height: 50%;
+}
+.boxExPai{
+    background-color:blue;
+    width: 30ex;
+    
+}
+.boxEx{
+    background-color: red;
+   
+}
