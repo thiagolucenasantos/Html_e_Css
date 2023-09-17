@@ -1,0 +1,12 @@
+body{
+    margin: 0;
+}
+.box{
+   font-size: 18px;
+}
+h1{
+    font-size: 30px;
+}
+.box h1{
+    font-size: inherit;/*ira herdar automaticamente o tamanho do box*/
+}
