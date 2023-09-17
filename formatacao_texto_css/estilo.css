@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 50px;
+    font-size: 17px;
+}
+p{
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    text-transform: capitalize;
+    word-spacing: 10px; /*espaçamento das palavras*/
+    line-height: 50px; /*espaçamento entre as linhas*/
+}
+a{
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
