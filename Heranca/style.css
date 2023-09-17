@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background-color: burlywood;
+    width: calc(100% - 20px);
+    height: 200px;
+    color: steelblue; /*é herdado na herança*/
+    border: 3px solid fuchsia; /*tag border não é herdada*/
+}
+.container strong{
+    border: 2px solid salmon;/*aplicado diretamente na tag strong sem herança*/
+}
