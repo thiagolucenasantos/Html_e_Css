@@ -1,0 +1,19 @@
+body{
+    margin: 0;
+    background-color: skyblue;
+}
+form{
+    width: 200px;
+    height: 150px;
+    background-color: darkkhaki;
+    margin: auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+input{
+    padding: 5px;
+    font-size: 15px;
+}
+button{
+    width: 100%;    
+}
