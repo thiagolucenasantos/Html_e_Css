@@ -1,0 +1,26 @@
+/* Criação de arquivo root para padronizar efeitos e facilitar quando 
+precisar alterar */
+:root{
+    --bg-color: blue;
+    --bg-second: yellow;
+    --font-color: rgb(140, 50, 255);
+    --font-size: 50px
+}
+body{
+    margin: 0;
+    background-color: var(--bg-color, #00ffff); /*cor azul secundaria, caso não exista essa variável no root, será utilizado essa*/
+    font-size: var(--font-size);
+}
+h1{
+    color: var(--bg-second);
+   
+}
+.container{
+    background-color: var(--font-color);
+    color: white;
+}
+@media (max-width:450px){
+    :root{
+        --font-size: 30px
+    }
+}
