@@ -1,0 +1,11 @@
+
+body{
+    margin: 0;
+}
+
+img{
+    width: max(50%, 300px); /*imagem respeitará o maior tamanho correspondente a tela naquele momento*/
+}
+
+
+/* min() - funciona igual somente o inverso, pegando o menor valor */
