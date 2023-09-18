@@ -1,0 +1,26 @@
+
+/* ANIMAÇÃO */
+@keyframes animacao {
+    0% {background-color: blue;top: 0px;left:0px}
+    25% {background-color: yellow;top: 0px;left:200px}
+    50% {background-color: red;top: 200px;left:200px }
+    75% {background-color: grey;top: 200px;left:0px}
+    100% {background-color: aqua;top: 0px;left:0px}  
+     
+    }
+    
+  
+body{
+    margin: 0;
+    background-color: skyblue;
+}
+.teste{
+    width: 150px;
+    height: 150px;
+    margin: 50px;
+    position:absolute;
+    animation-name: animacao;
+    animation-duration: 5s;
+    animation-iteration-count:inherit;
+    
+}
