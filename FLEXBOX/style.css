@@ -1,0 +1,29 @@
+.container {
+    display: flex; /*aplica o efeito de um ficar ao lado do outro*/
+    flex-direction:row; /*propriedade em que podemos deixar em linha ou coluna e movimentar os elementos de um lado para outro*/
+    background-color: burlywood;
+    margin: 10px;
+}
+.div1{
+    flex: 1; /*propriedade distribue as duas divs por igual em toda a página*/
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.div2{
+    flex: 1; /*propriedade determina a qual grupo pertence distribue as duas divs por igual em toda a página*/
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.div3{
+    
+        flex: 3; /*propriedade distribue as duas divs por igual em toda a página*/
+        background-color: cadetblue;
+        margin: 10px;
+        padding: 10px;
+        font-size: 15px;
+    
+}
