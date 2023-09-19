@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Projeto_Site_HTML_CSS</title>
+
+    <script type="text/javascript">
+        window.onload = function(){
+            document.querySelector(".menuMobile").addEventListener("click",
+            function(){
+                if(document.querySelector(".menu nav ul").style.display == 'flex'){
+                    document.querySelector(".menu nav ul").style.display = 'none';
+                }else{
+                    document.querySelector(".menu nav ul").style.display = 'flex'
+                }
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <!-- CABEÇALHO DO SITE -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href=""><img src="./assets/images/logo.png" alt="Logo medico"></a>
+            </div>
+            <div class="menu">
+                <!-- TAG NAV DEFINI O MENU DE NAVEGAÇÃO -->
+                <nav>
+                    <div class="menuMobile">
+                        <div class="mmLine"></div>
+                        <div class="mmLine"></div>
+                        <div class="mmLine"></div>
+                    </div>
+                    <ul>
+                        <li class="active"><a href="">Home</li></a>
+                        <li><a href="">Home</li></a>
+                        <li><a href="">Home</li></a>
+                        <li><a href="">Home</li></a>
+                        <li><a href="">Home</li></a>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- TAG SECTION BANNER -->
+    <section id="banner">
+        <div class="container column">
+            <div class="banner_headline">
+                <h1>Viva a experiência</h1>
+                <h2>Somos responsáveis na sua solução de problema.</h2>
+            </div>
+            <div class="banner_options">
+                <div class="banner1">
+                    <div class="banner_title">
+                        Casos de Emergência
+                    </div>
+                    <div class="banner_desc">
+                        Caso precise de um atendimento de médico urgente, utilze nossos canais de atendimento
+                        emergênciais.
+                    </div>
+                    <a href="">Informações</a>
+                </div>
+                <div class="banner2">
+                    <div class="banner_title">
+                        Atendimento Presencial
+                    </div>
+                    <div class="banner_desc">
+                        Atendimento presencial com seu médico de confiança, faça seu agendamento.
+                    </div>
+                    <a href="">Informações</a>
+                </div>
+                <div class="banner3">
+                    <div class="banner_title">Horários</div>
+                    <div class="horarios">
+                        <div> Monday - Friday </div>
+                        <div> 8.00 - 17.00</div>
+                    </div>
+                    <div class="horarios">
+                        <div> Sabado </div>
+                        <div> 9.00 - 14.00 </div>
+                    </div>
+                    <div class="horarios">
+                        <div> Domingo </div>
+                        <div> 9.00 - 12.00 </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- SECTION DO CONTEUDO A BAIXO DO BANNER -->
+    <section id="geral">
+        <div class="container">
+            <section>
+                <div class="widget">
+                    <div class="widgetTitle">
+                        <div class="widgetTitleText">Atualizações</div>
+                        <div class="widgetTitleBar"></div>
+                    </div>
+                </div>
+                <!-- Article da imagem do médico e da descrição a baixo da imagem -->
+                <div class="widgetBody flex">
+                    <article>
+                        <a href="">
+                            <div class="date">
+                                <div class="posted">28 Agos 23</div>
+                                <div class="comments">2</div>
+                            </div>
+                            <div class="newImageDr">
+                                <img src="../PROJETO_SITE_FLEXBOX_e_HTML/assets/images/dr.jpg" alt="">
+                            </div>
+                            <div class="descricaoImage">
+                                Venha até o seu médico presencialmente.
+                            </div>
+                            <div class="resumoTexto">
+                                Médicos de prontidão 24 horas em nossas unidades para melhor atender,
+                                diversas especialidades, para todas as faixas de idade, um pequeno playground
+                                para as crianças enquanto aguardam, e um ótimo café para quem quiser somente visitar.
+                                Estacionamento próprio, gratuito para clientes e profissionais de nossas unidades.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="date">
+                                <div class="posted">28 Agos 23</div>
+                                <div class="comments">2</div>
+                            </div>
+                            <div class="newImageDr">
+                                <img src="../PROJETO_SITE_FLEXBOX_e_HTML/assets/images/dr.jpg" alt="">
+                            </div>
+                            <div class="descricaoImage">
+                                Venha até o seu médico presencialmente.
+                            </div>
+                            <div class="resumoTexto">
+                                Médicos de prontidão 24 horas em nossas unidades para melhor atender,
+                                diversas especialidades, para todas as faixas de idade, um pequeno playground
+                                para as crianças enquanto aguardam, e um ótimo café para quem quiser somente visitar.
+                                Estacionamento próprio, gratuito para clientes e profissionais de nossas unidades.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="date">
+                                <div class="posted">28 Agos 23</div>
+                                <div class="comments">2</div>
+                            </div>
+                            <div class="newImageDr">
+                                <img src="../PROJETO_SITE_FLEXBOX_e_HTML/assets/images/dr.jpg" alt="">
+                            </div>
+                            <div class="descricaoImage">
+                                Venha até o seu médico presencialmente.
+                            </div>
+                            <div class="resumoTexto">
+                                Médicos de prontidão 24 horas em nossas unidades para melhor atender,
+                                diversas especialidades, para todas as faixas de idade, um pequeno playground
+                                para as crianças enquanto aguardam, e um ótimo café para quem quiser somente visitar.
+                                Estacionamento próprio, gratuito para clientes e profissionais de nossas unidades.
+                            </div>
+                        </a>
+                    </article>
+
+                    <article>
+                        <a href="">
+                            <div class="date">
+                                <div class="posted">28 Agos 23</div>
+                                <div class="comments">2</div>
+                            </div>
+                            <div class="newImageDr">
+                                <img src="../PROJETO_SITE_FLEXBOX_e_HTML/assets/images/dr.jpg" alt="">
+                            </div>
+                            <div class="descricaoImage">
+                                Venha até o seu médico presencialmente.
+                            </div>
+                            <div class="resumoTexto">
+                                Médicos de prontidão 24 horas em nossas unidades para melhor atender,
+                                diversas especialidades, para todas as faixas de idade, um pequeno playground
+                                para as crianças enquanto aguardam, e um ótimo café para quem quiser somente visitar.
+                                Estacionamento próprio, gratuito para clientes e profissionais de nossas unidades.
+                            </div>
+                        </a>
+                    </article>
+                </div>
+            </section>
+            <!-- QUADRADOS -->
+            <aside>
+                <div class="widget">
+                    <div class="widgetTitle">
+                        <div class="widgetTitleText">Departamentos</div>
+                        <div class="widgetTitleBar"></div>
+                        <div class="quadrados">
+                            <div class=""></div>
+                            <div class=""></div>
+                            <div class=""></div>
+                            <div class=""></div>
+                            <div class=""></div>
+                            <div class=""></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ATALHOS A BAIXO DO QUADRADO -->
+                <div class="widget">
+                    <div class="widgetTitle">
+                        <div class="widgetTitleText">Contatos</div>
+                        <div class="widgetTitleBar"></div>
+                        <div class="textoAtalho">Utilize nossos atalhos para facilitar seu atendimento.</div>
+                        <div class="atalhosBotoes">
+                            <p>Telefone: 11 2222-2222</p>
+                            <p>email: tkfio@gmai.com</p>
+                            <p>Filiais</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <!-- RODAPÉ DA PÁGINA -->
+    <footer>
+        <div class="container flexColumn">
+            <div class="footerMenu">
+                <div class="fm1">
+                    <a href="">
+                        <div class="footerTitle">Saúde Mental</div> 
+                        <div class="footerDesc">Temos um centro individual para te ajudar</div>
+                    </a>
+                </div>
+                <div class="fm2">
+                    <a href="">
+                        <div class="footerTitle">Distribuição de Medicamentos</div> 
+                        <div class="footerDesc">Centro de distribuição individual</div>
+
+                    </a>
+                </div>
+                <div class="fm3">
+                    <a href="">
+                        <div class="footerTitle">Pagamentos Online</div> 
+                        <div class="footerDesc">Atendimento rápido e eficiente on-line</div>
+
+                    </a>
+                </div>
+            </div>
+
+            <!-- SEGUNDA PARTE DO RODAPE DA PÁGINA (MENU) -->
+            <div class="footer_baixo">
+                <div class="footerAreaDesc">
+                    <div class="widget">
+                        <div class="widgetTitle">
+                            <div class="widgetTitleText">Cinica Médica</div>
+                            <div class="widgetTitleBar"></div>
+                        </div>
+                        <div class="footerTexto">
+                            <div>Venha conhecer nossos centros médicos.</div>
+                            <div>Endereço Clinica - California East</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- SEGUNDA PARTE DO RODAPE DA PÁGINA (AREA A BAIXO DO MENU) -->
+
+                <div class="footerAreaDesc">
+                    <div class="widget">
+                        <div class="widgetTitle">
+                            <div class="widgetTitleText">Últimos Posts</div>
+                            <div class="widgetTitleBar"></div>
+                        </div>
+                        <div class="footerTexto">
+                            <input type="image" name="" id="">Descoberta de novas curas aproximan a ciência.
+                            <input type="image" name="" id="">A luta está quase acabando.
+                        </div>
+                    </div>
+                </div>
+                <div class="footerAreaDesc">
+                    <div class="widget">
+                        <div class="widget">
+                            <div class="widgetTitle">
+                                <div class="widgetTitleText">Rede Social</div>
+                                <div class="widgetTitleBar"></div>
+                            </div>
+                            <div class="footerTexto">
+                                <input type="image" name="" id=""> Venha conferir as promoções. <br>
+                                <input type="image" name="" id=""> Palestra do Dr. Crow amanhã.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- SEGUNDA PARTE DO RODAPE DA PÁGINA (DIREITOS DA PÁGINA) -->
+            <div class="footerDireitos">
+                Copyright - Todos os direitos reservados
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
