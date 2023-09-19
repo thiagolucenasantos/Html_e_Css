@@ -1,0 +1,32 @@
+.container {
+    display: flex; /*aplica o efeito de um ficar ao lado do outro*/
+    flex-flow: row wrap; /*determina duas propriedades em uma tag só, <'flex-direction'> || <'flex-wrap'>*/
+    background-color: burlywood;
+    margin: 10px;
+}
+.container2 {
+    justify-content:center; /*propriedade do flexbox que facilita o alinhamento dos elementos*/
+    align-items:flex-end;
+    display: flex; /*aplica o efeito de um ficar ao lado do outro*/
+    flex-flow: row wrap; /*determina duas propriedades em uma tag só, <'flex-direction'> || <'flex-wrap'>*/
+    background-color: burlywood;
+    margin: 10px;
+    height: 600px;
+    /* width: 200px; */
+}
+.container div{
+    width: 200px;
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.container2 div{
+    width: 100px;
+    background-color: rgb(79, 235, 58);
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+    height: 100px;
+    width: 100px;
+}

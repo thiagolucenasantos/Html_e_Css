@@ -1,0 +1,24 @@
+.container {
+    display: flex; /*aplica o efeito de um ficar ao lado do outro*/
+    flex-direction: row ; /*determina duas propriedades em uma tag só, <'flex-direction'> || <'flex-wrap'>*/
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    margin: 10px;
+    height: 400px;
+}
+
+.container div{
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+.div7{
+    align-self: flex-start;/*tag utilizada para posicionar um item separadamente das configuraçÒes existentes no container*/
+}
+.div10{
+    order: -1; /*altera a ordem do elemento o padrão no html é order:0 */
+}
