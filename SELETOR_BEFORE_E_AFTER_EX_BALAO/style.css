@@ -1,0 +1,16 @@
+.balao{
+    display: inline-block;
+    background-color: #0000FF;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+/* CRIAÇÃO DE TRIANGULO PARA PARECER UM BALÃO */
+.balao::after{
+    content: '';
+    display: block;
+    position: absolute;/* com essa configuração agora ele não faz mais parte da div, podendo ser posicionado agora sem alterar a div*/
+    margin-top: 20px;
+    border: 20px solid;
+    border-color: #0000FF transparent transparent transparent;
+}
