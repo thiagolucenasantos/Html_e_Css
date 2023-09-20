@@ -1,0 +1,83 @@
+/* FONTS EXTERNAS 
+font-family: 'Black Ops One', cursive;
+font-family: 'Gloria Hallelujah', cursive;
+*/
+
+/* ICONE*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body{
+    margin: 0;
+    background-color:burlywood;
+    
+}
+header .container{
+    background-color: cadetblue;
+    border: #12063f;
+    border-radius: 10px;
+    border-style: solid;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.nomePrincipal h1{
+    font-size: 40px;
+    font-family: 'Black Ops One', cursive;
+    color: blue;
+    text-align: center;
+}
+.nomePrincipal h4{
+    font-size: 20px;
+    font-family: 'Gloria Hallelujah', cursive;
+    text-align: center;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    background-color: crimson;
+    border: #12063f;
+    border-radius: 10px;
+    border-style: solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.descricaoCantor{
+    font-family: 'Gloria Hallelujah', cursive;
+    padding: 5px;
+    background-color: rgb(115, 45, 247);
+    border: #12063f;
+    border-radius: 10px;
+    border-style: solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.display{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(229, 245, 87);
+    border: #12063f;
+    border-radius: 10px;
+    border-style: solid;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.display .albuns ul li{
+    list-style: none;    
+}
+.display .albuns ul li i{
+    padding: 5px;
+}
+.linkWikipedia{
+    display: flex;
+    justify-content: center;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
