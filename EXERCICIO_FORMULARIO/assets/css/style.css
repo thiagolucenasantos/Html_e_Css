@@ -1,0 +1,72 @@
+body{
+   margin: 0;
+}
+#imagemFundo{
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/dbd.jpg');
+    background-position: center;
+    background-size: cover; /*a imagem irá se adaptar dependendo do tamanho da tela do dispositivo*/
+    background-attachment: fixed;
+    height: 619px;
+}
+.containerForm{
+    flex-direction: column;
+    font-family: 'Creepster', cursive;
+    color: rgb(97, 216, 42);
+}
+
+section h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    color: red;
+}
+section input[type=email], input[type=text], textarea {
+    /* margin-top: 5px; */
+    margin-bottom: 18px;
+    border: 3px solid rgb(206, 23, 99)
+    
+}
+
+
+label{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /* margin-right: 80%; */
+    font-size: 20px;
+}
+label select{
+    margin-top: px;
+    margin-bottom: 7px;
+}
+label textarea{
+    resize: none;
+    height: 60px;
+}
+.sexo{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-bottom: 7px;
+    cursor: pointer;
+    border: 50%;
+}
+.comentario{
+    margin-top: 30px;
+}
+.containerButton{
+    display: flex;
+    justify-content: center;
+}
+button{
+    font-family: 'Creepster', cursive;
+    color: rgb(97, 216, 42);
+    background-color: rgb(73, 11, 11);
+    margin-top: 20px;
+    padding: 10px;
+    border: 3px solid rgb(206, 23, 99);
+    border-radius: 5px;
+    cursor: pointer;
+}
