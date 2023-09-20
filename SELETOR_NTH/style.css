@@ -1,0 +1,9 @@
+/* PEGANDO O SEGUNDO ELEMENTO DE CIMA PARA BAIXO */
+div:nth-child(2){
+    background-color: cornflowerblue;
+}
+
+/* PEGANDO O SEGUNDO ELEMENTO DE BAIXO PRA CIMA */
+div:nth-last-child(3){
+    background-color: crimson;
+}
