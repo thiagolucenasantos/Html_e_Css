@@ -1,0 +1,4 @@
+/* TODOS OS ELEMENTOS IRÃO RECEBER O EFEITO, MENOS O BODY E A TAG 'p' */
+body :not(p){ 
+    background-color: coral;
+}
