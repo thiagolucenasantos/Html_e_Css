@@ -1,0 +1,23 @@
+body{
+    text-align: center;
+}
+
+div{
+    background-color: aqua;
+}
+/* ELEMENTOS CRIADOS DENTRO DA DIV, PORÉM NÃO SAO VISTOS NO HTML */
+/* ELEMENTO CRIADO ANTES DO SPAN QUE ESTÁ NO HTML */
+div::before{
+    content:"->"; /* esse elemento é obrigatório vir com o contente para funcionar*/
+    color: blue;
+    font-size: 50px;
+}
+
+/* ELEMENTO CRIADO APÓS DO SPAN QUE ESTÁ NO HTML, ADICIONANDO UM QUADRADO NO SPAN QUE É DISPLAY: INLINE */
+div::after{
+    content:""; /* esse elemento é obrigatório vir com o contente para funcionar*/
+    display: inline-block; /*para que o quadrado apareça*/
+    width: 30px;
+    height: 30px;
+    color: rgb(156, 4, 30);
+}
