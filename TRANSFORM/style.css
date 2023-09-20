@@ -1,0 +1,26 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    margin: auto;
+    transform:scale(2,1);/* aumento de escala */
+}
+span{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(61, 42, 165);
+    justify-content: center;
+    transform:rotate(30deg);/* rotaciona o elemento */
+    align-items: center;    display: block;
+    margin: auto;
+}
+#quadrado{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(90, 202, 45);
+    justify-content: center;
+    transform:skewX(20deg);/* distorce o elemento em ângulo */
+    align-items: center;    
+    display: block;
+    margin: auto;
+}
