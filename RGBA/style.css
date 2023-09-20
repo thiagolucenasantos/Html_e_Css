@@ -1,0 +1,11 @@
+body{
+    background-color: rgb(109, 0, 0);
+}
+div{
+    background-color: rgba(84, 221, 255, 0.30); /*a - ultimo item é de transparencia*/
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    top:20px;
+    bottom: 20px;
+}
