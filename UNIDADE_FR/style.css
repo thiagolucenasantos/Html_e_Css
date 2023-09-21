@@ -1,0 +1,13 @@
+.container{
+    width: 700px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr; /* representa a unidade de medida, no exemplo as colunas que pussuem 2, são basicamente o dobro das demais que possuem 1*/
+    grid-gap: 10px; /*primeiro numero é para linha e o segundo representa a coluna*/
+   
+}
+.item{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+}
