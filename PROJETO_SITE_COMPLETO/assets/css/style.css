@@ -1,0 +1,656 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    overflow-x: hidden; /* todo o conteúdo que ultrapassar a horizontal, será iguinorado, evitando aparecer a barra de rolagem em baixo. */
+}
+/* HEADER */
+header{
+    height: 100px;
+    background-color: #000000;
+    color: #ffffff;
+}
+.header{
+    display: flex;
+    max-width: 1140px;
+    height: 100px;
+    margin: auto;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+
+}
+.logoImg{
+    width: 60px;
+    height: 60px;
+    background-color: #B28756;
+    border-radius: 40px;
+}
+.menuBotao{ /*CONFIGURAÇÃO PARA QUE O MENU DE TABLET E CELULAR NÃO APAREÇA QUANDO O USUÁRIO ABRIR A PÁGINA EM TELAS MAIORES OU COMPUTADORES*/
+    display: none;
+}
+.menu{
+flex: 1;
+display: flex;
+justify-content: flex-end;
+}
+.menu ul,
+.menu li{
+    list-style: none;
+}
+.menu ul{
+    display: flex;
+}
+.menu li a{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: none; /*tira o sublinhado do link em baixo das palavras*/
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex; /*alteração no display por conta do 'a' ser por padrão display:inline com isso não aceita aumento de altura*/
+    align-items: center;
+    height: 100px;
+    border-bottom: 5px solid #000000; /*propriedade adicionada porque no hover apos passar o mouse ele adiciona uma borda de 5px, entáo adionando ela não aparece o efeito e o texto não pula*/
+    }
+.menu li a:hover, .menu .active a{
+    border-bottom: 5px solid #B28756;
+    color: #CCC;
+}
+
+/* MAIN */
+.banner{
+    height:calc(100vh - 100px); /*propriedade cal para fazer com que o banner ocupe 100% da aréa de qualquer tela, porém foi descontado os 100px do header (menu) que já está utilizando*/
+    background-color: #333;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    overflow: hidden; /*tudo que passa e aparece a barra de rolagem ele ignora, com isso a barra some */
+}
+.banner .sliders{
+    width: 1000vw;
+    height: 100%;
+}
+.banner .slide{
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.banner .slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center; /*centralizando horizontalmente*/
+    align-items: center;
+    color: #ffffff;
+}
+.banner h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 50px;
+}
+.banner h1 span{
+    color: #B28756;
+}
+.banner h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.button{
+    display: inline-block;
+    background-color: #B28756;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+.banner .slidersPointers{
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.banner .pointer.active{
+    background-color: #B28756;
+}
+/* TERCEIRA PARTE DA TELA */
+.default{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .sectionTitle,
+.default .sectionDesc{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.default .sectionTitle{
+    font-size: 20px;
+    
+}
+.default .sectionDesc{
+    font-size: 11px;
+    color: #CCC;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
+}
+.default .sectionBody{
+    margin: auto;
+    max-width: 1140px;
+}
+.default.light{
+    background-color: #f7f7f7;
+}
+.default.light .sectionTitle,
+.defalult.light .sectionBody{
+    color: #000000;
+
+}
+.default.dark{
+    background-color: #000000;
+}
+.default.dark .sectionTitle,
+.default.dark .sectionBody{
+    color: #ffffff;
+}
+
+/* QUARTA PARTE DA TELA */
+.sectionServices{
+    display: flex;
+}
+.sectionService{
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #333;
+    padding: 15px;
+}
+.sectionService:first-child{ /*aplicando a borda lateral esquerda somente no primeiro elemento para que todos fiquem com a borda correta*/
+    border-left: 1px solid #333;
+}
+.sectionService h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.sectionService p{
+    margin-top: 10px;
+    color: #999;
+    font-size: 13px;
+}
+/* QUINTA PARTE DA TELA */
+.sectionProjects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+.sectionProjectsFilters{
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 30px; 
+    padding: 0px 20px;
+    display: inline-block;
+    
+}
+.sectionProjectsFilters ul,
+.sectionProjectsFilters li{
+    list-style: none;
+}
+.sectionProjectsFilters li{
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    border-left: 1px solid #ccc;
+    color: #555;
+    border-bottom: 3px solid #eee; /*adicionando a mesma cor no fundo para a borda já existir a baixo dos elementos*/
+    cursor: pointer;
+}
+.sectionProjectsFilters li:hover,
+.sectionProjectsFilters li.active{
+    border-bottom: 3px solid #B28756; /*após passar o mouse a borda já existente apenas muda de cor*/
+}
+.sectionProjectsFilters li:first-child{
+    border-left: 0;
+}
+.sectionProjectPhotos{
+    width: 100vw; /*100 % da view porte (tela), quando a tela do dispositivo for menos*/
+    max-width: 1140px; /*tamanho máximo quando a tela for grande demais*/
+    margin: 20px;
+    display: flex; /* para ficar uma ao lado da outra*/
+    flex-wrap: wrap; /* caso algum elemento não caiba na mesma linha ele automaticamente irá para baixo */
+    justify-content: center;
+}
+.sectionProjectPhoto{
+    width: 280px;
+}
+.sectionProjectPhotoArea{
+    margin: 10px;
+    width: 260px;
+    height: 160px;
+}
+.sectionProjectPhotoInfo{
+    position: absolute; /* a informação ficar em cima da foto*/
+    background-color: rgba(0, 0, 0, 0.7);
+    width: inherit;
+    height: inherit;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #ffffff;
+}
+.sectionProjectPhotoInfo h5{
+    font-size: 20px;
+    font-weight: 600;
+}
+.sectionProjectPhotoArea:hover /*efeito será aplicado na classe Area porém a alteração está sendo feita da classe info*/
+.sectionProjectPhotoInfo{
+    display: flex;
+}
+.sectionProjectPhotoArea img{
+    width: inherit; /*propriedade inherit faz com que herde as configiurações do elemento acima*/
+    height: inherit;
+}
+/* SEXTA PARTE DA TELA */
+.bgTeam{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+.sectionTimeArea{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.sectionTeam{
+    overflow: hidden;
+    max-width: 880px;
+    margin: auto;
+}
+.sectionTeam .sliders{
+    width: 1000vw;
+    height: 100%;
+}
+.sectionTeam .slide{
+    width: 280px;
+    height: 100%;
+    min-height: 300px;
+    display: inline-block;
+    background-color: #ffffff;
+    margin-right: 20px;
+}
+.sectionTeam .slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center; /*centralizando horizontalmente*/
+    align-items: center;
+    color: #000000;
+    padding: 30px;
+    
+}
+.sectionTeam .slidersPointers{
+    margin-top: 30px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sectionTeam .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.sectionTeam .pointer.active{
+    background-color: #B28756;
+}
+.sectionTimeAvatar{
+ width: 150px;
+ height: auto;
+}
+.sectionTimeName{
+text-transform: uppercase;
+font-weight: 600;
+font-size: 17px;
+margin-top: 30px;
+}
+.sectionTimeCargo{
+font-size: 14px;
+color: #999;
+margin-top: 5px;
+}
+.sectionTimeSocial{
+    display: flex;
+    margin-top: 30px;
+}
+.sectionTimeSocial a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    background-color: #CCC;
+    border-radius: 13px;
+    margin-right: 10px;
+    cursor: pointer;
+}  
+.sectionTimeSocial a:hover{
+    background-color: #B28756;
+} 
+
+/* MAPA*/
+.sectionMapa{
+    background-image: url(../images/mapa.jpeg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.sectionMapArea{
+    width: 100vw;
+    max-width: 1140px;
+    margin: auto;
+}
+.sectionMapInfo{
+    width: 50%;
+    padding: 30px;
+    background-color: #ffffff;
+    color: #000000;
+}
+.sectionMapInfoItem{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #999;
+}
+.sectionMapInfoItemImg{
+    width: 30px;
+    height: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #999;
+    border-radius: 15px;
+    margin-right: 10px;
+}
+.sectionMapInfoItemImg img{
+    width: 15px;
+    height: auto;
+}
+
+
+
+/* AREAS ESPECIAIS */
+.sectionSobreNos{
+    display: flex;
+}
+.sectionSobreNosEsquerda p{
+    font-size: 14px;
+    line-height: 25px;
+}
+.sectionSobreNosEsquerda{
+    flex: 1; /*deixa os elementos um ao lado do outro */
+}
+.sectionSobreNosDireita{
+    width: 500px;
+    text-align: center;
+}
+.sectionSobreNosDireita img{
+    width: 480px;
+    box-shadow: 0px 5px 10px #333;
+}
+
+
+
+/* CONFIGURAÇÃO DE RESPONSIVIDADE PARA TABLETS */
+
+@media (min-width: 450px) and (max-width: 820px){
+    .logoImg{
+        margin-left: 30px;
+    }
+    .menuBotao{
+        display: block;
+        width: 40px;
+        margin-right: 30px;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+.menu ul{
+    flex-direction: column;
+}
+.menu li a{
+    font-weight: bold;
+    height: 80px;
+    font-size: 27px;
+    margin-left: 50px;
+    border: 0;
+}
+.menu li.active a{
+    border: 0;
+    color: #B28756;
+}
+.menu li a:hover{
+    color: #B28756;
+}
+.sectionSobreNos{
+    flex-direction: column;
+}
+.sectionSobreNosEsquerda{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.sectionSobreNosEsquerda .button{
+   margin: auto;
+   margin-top: 30px;
+}
+.sectionSobreNosDireita {
+    margin: auto;
+}
+.sectionServices{
+    flex-wrap: wrap; /*colocado para quebrar os intens, para ficar dois em cima e dois em baixo*/
+}
+.sectionService{
+    min-width: 50%; /*propriedade adicionada para cada item ocupar 50% da tela, assim ficarão somente dois por linha*/
+    margin-bottom: 30px;
+}
+.sectionService:first-child{
+    border-left: 0;
+}
+.sectionTeam .sliders{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sectionTeam .slide{
+width: 280px;
+height: 0;
+margin-right: 20px;
+margin-bottom: 30px;
+}
+.sectionMapa{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.sectionMapArea{
+    width: auto;
+}
+.sectionMapInfo{
+    width: auto;
+}
+.sectionMapInfoItem{
+    margin-bottom: 20px;
+}
+}
+
+
+
+
+/* CONFIGURAÇÃO DE RESPONSIVIDADE PARA CELULARES */
+
+@media (max-width: 449px){
+    .logoImg{
+        margin-left: 30px;
+    }
+    .menuBotao{
+        display: block;
+        width: 40px;
+        margin-right: 30px;
+    }
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 70vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+.menu ul{
+    flex-direction: column;
+}
+.menu li a{
+    font-weight: bold;
+    height: 60px;
+    font-size: 17px;
+    margin-left: 20px;
+    border: 0;
+}
+.menu li.active a{
+    border: 0;
+    color: #B28756;
+}
+.menu li a:hover{
+    color: #B28756;
+}
+.banner h1{
+    font-size: 30px;
+}
+.banner h2{
+    font-size: 15px;
+}
+.sectionSobreNos{
+    flex-direction: column;
+}
+ .sectionSobreNosDireita{
+    /* display: flex; */
+    /* margin: auto; */
+  width: auto;
+   margin-left: 30px;
+    margin-right: 30px; 
+}
+.sectionSobreNosEsquerda{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+} 
+.sectionSobreNosDireita img{
+    width: 100%;   
+}
+.sectionSobreNosEsquerda{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.sectionSobreNosEsquerda .button{
+   margin: auto;
+   margin-top: 30px;
+}
+
+.sectionServices{
+    flex-wrap: wrap; /*colocado para quebrar os intens, para ficar dois em cima e dois em baixo*/
+}
+.sectionService{
+    min-width: 50%; /*propriedade adicionada para cada item ocupar 50% da tela, assim ficarão somente dois por linha*/
+    margin-bottom: 30px;
+}
+.sectionService:first-child{
+    border-left: 0;
+}
+.sectionProjectsFilters{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.sectionProjectsFilters li{
+    border-bottom: 0;
+}
+.sectionProjectPhoto{
+    width: 320px;
+}
+.sectionProjectPhotoArea{
+    width: 300px;
+    height: 190px;
+}
+.sectionTeam .sliders{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.sectionTeam .slide{
+width: 280px;
+height: 0;
+margin-right: 20px;
+margin-bottom: 30px;
+}
+.sectionMapa{
+  padding: 0;
+  padding-bottom: 250px;
+}
+.sectionMapArea{
+    width: auto;
+}
+.sectionMapInfo{
+    width: auto;
+}
+.sectionMapInfoItem{
+    margin-bottom: 20px;
+}
+}
