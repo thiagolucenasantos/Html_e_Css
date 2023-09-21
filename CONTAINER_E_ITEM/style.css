@@ -1,0 +1,12 @@
+.container{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    grid-gap: 10px 30px; /*primeiro numero é para linha e o segundo representa a coluna*/
+    
+}
+.item{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+}
