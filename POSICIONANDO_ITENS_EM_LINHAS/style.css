@@ -1,0 +1,33 @@
+.container{
+    height: 800px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; /*primeiro numero é para linha e o segundo representa a coluna*/
+    justify-content: start;
+    align-content: start;
+}
+.item{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item3{
+    grid-column-start: 2; /*confiiguração de grids column feita para o elemento continuar no mesmo lugar, somente pegar as colunas*/
+    grid-column-end: 4; /*aumentado para 4 para pegar até a quarta coluna*/
+
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.item7{
+    grid-column-start: 3; /*colunas 3 e quatro. a posição original deles*/
+    grid-column-end: 4;
+
+    grid-row-start: 4; /*pegando as linhas 4 e 6 para pegaro até o final*/
+    grid-row-end: 6;
+}
