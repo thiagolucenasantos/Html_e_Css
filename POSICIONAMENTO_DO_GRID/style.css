@@ -1,0 +1,17 @@
+.container{
+    height: 800px;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-gap: 10px; /*primeiro numero é para linha e o segundo representa a coluna*/
+    grid-auto-rows: 100px;
+    justify-content: end;
+    align-content: end;
+}
+.item{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
